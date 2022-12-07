@@ -3478,6 +3478,16 @@ dependencies = [
 ]
 
 [[package]]
+name = "next-transform-strip-page-exports"
+version = "0.1.0"
+dependencies = [
+ "fxhash",
+ "swc_core 0.45.4",
+ "testing",
+ "tracing",
+]
+
+[[package]]
 name = "nix"
 version = "0.25.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -7303,6 +7313,7 @@ dependencies = [
  "indexmap",
  "lazy_static",
  "next-font",
+ "next-transform-strip-page-exports",
  "num-bigint",
  "once_cell",
  "pin-project-lite",
