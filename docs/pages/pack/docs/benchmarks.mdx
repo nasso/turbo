@@ -84,10 +84,14 @@ bench_startup/Turbopack SSR/1000 modules          1125.3±44.54ms
 bench_startup/Turbopack SSR/5000 modules               3.6±0.02s
 bench_startup/Turbopack SSR/10000 modules              7.5±0.44s
 bench_startup/Turbopack SSR/30000 modules             22.3±1.29s
-bench_startup/Vite CSR/1000 modules                    4.8±0.02s
-bench_startup/Vite CSR/5000 modules                   19.2±0.15s
-bench_startup/Vite CSR/10000 modules                  37.2±0.29s
-bench_startup/Vite CSR/30000 modules                 109.5±1.14s
+bench_startup/Vite CSR/1000 modules                    4.8±0.01s
+bench_startup/Vite CSR/5000 modules                   19.7±0.39s
+bench_startup/Vite CSR/10000 modules                  38.9±0.27s
+bench_startup/Vite CSR/30000 modules                 116.4±2.35s
+bench_startup/Vite SWC CSR/1000 modules                4.2±0.17s
+bench_startup/Vite SWC CSR/5000 modules               16.7±1.09s
+bench_startup/Vite SWC CSR/10000 modules              33.0±0.91s
+bench_startup/Vite SWC CSR/30000 modules              96.6±0.50s
 ```
 
 ### File updates (HMR)
@@ -157,13 +161,14 @@ bench_hmr_to_commit/Turbopack SSR/1000 modules     21.7±0.97ms
 bench_hmr_to_commit/Turbopack SSR/5000 modules     23.5±0.50ms
 bench_hmr_to_commit/Turbopack SSR/10000 modules    23.3±0.53ms
 bench_hmr_to_commit/Turbopack SSR/30000 modules    25.1±0.36ms
-
-bench_hmr_to_commit/Vite SWC CSR/100 modules       101.5±0.21ms
-bench_hmr_to_commit/Vite SWC CSR/500 modules       101.6±0.27ms
-bench_hmr_to_commit/Vite SWC CSR/1000 modules      101.6±0.67ms
-bench_hmr_to_commit/Vite SWC CSR/5000 modules      101.4±0.34ms
-bench_hmr_to_commit/Vite SWC CSR/10000 modules     102.5±1.21ms
-bench_hmr_to_commit/Vite SWC CSR/30000 modules     100.8±0.92ms
+bench_hmr_to_commit/Vite CSR/1000 modules         111.7±5.26ms
+bench_hmr_to_commit/Vite CSR/5000 modules         118.6±4.93ms
+bench_hmr_to_commit/Vite CSR/10000 modules        118.9±3.76ms
+bench_hmr_to_commit/Vite CSR/30000 modules       125.3±15.15ms
+bench_hmr_to_commit/Vite SWC CSR/1000 modules     104.6±1.80ms
+bench_hmr_to_commit/Vite SWC CSR/5000 modules     109.4±3.67ms
+bench_hmr_to_commit/Vite SWC CSR/10000 modules    114.2±1.57ms
+bench_hmr_to_commit/Vite SWC CSR/30000 modules   129.7±16.98ms
 ```
 
 Note that Vite is using the official [SWC plugin](https://github.com/vitejs/vite-plugin-react-swc) for these benchmarks, which is not the default configuration.
