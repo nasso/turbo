@@ -3512,10 +3512,12 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "auto-hash-map",
+ "crossterm",
  "indexmap",
  "indoc",
  "mime",
  "once_cell",
+ "owo-colors",
  "qstring",
  "serde",
  "serde_json",
